@@ -79,7 +79,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">ggmulti</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.0.2</span>
       </span>
     </div>
 
@@ -111,6 +111,9 @@
       <a href="../articles/histogram-density-.html">Histogram and Density</a>
     </li>
   </ul>
+</li>
+<li>
+  <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -167,7 +170,7 @@
       <tr>
         <th colspan="2">
           <h3 id="section-serial-axes-geoms" class="hasAnchor"><a href="#section-serial-axes-geoms" class="anchor"></a>Serial Axes Geoms</h3>
-          <p class="section-desc"><p>Each non-aesthetics component defined in the mapping <code><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes()</a></code> will be treated as an axis.</p></p>
+          <p class="section-desc"><p>Each non-aesthetics component defined in the mapping <code>aes()</code> will be treated as an axis.</p></p>
         </th>
       </tr>
       
@@ -296,7 +299,7 @@
       <tr>
         <th colspan="2">
           <h2 id="section-coord" class="hasAnchor"><a href="#section-coord" class="anchor"></a>Coord</h2>
-          <p class="section-desc"><p>The coordinate system determines how the data is displayed on the plane. Note that, in serial axes coordinate system, neither <code>x</code> or <code>y</code> is required. Each non-aesthetics element defined in the mapping <code><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes()</a></code> will be treaed as the target of interest.</p></p>
+          <p class="section-desc"><p>The coordinate system determines how the data is displayed on the plane. Note that, in serial axes coordinate system, neither <code>x</code> or <code>y</code> is required. Each non-aesthetics element defined in the mapping <code>aes()</code> will be treaed as the target of interest.</p></p>
         </th>
       </tr>
       
@@ -313,13 +316,13 @@
       </tr><tr>
         
         <td>
-          <p><code><a href="coord_polar.html">coord_polar()</a></code> <code><a href="coord_polar.html">coord_polar()</a></code> </p>
+          <p><code><a href="coord_polar.html">coord_polar()</a></code> </p>
         </td>
         <td><p>Polar coordinates</p></td>
       </tr><tr>
         
         <td>
-          <p><code><a href="coord_radar.html">coord_radar()</a></code> <code><a href="coord_radar.html">coord_radar()</a></code> </p>
+          <p><code><a href="coord_radar.html">coord_radar()</a></code> </p>
         </td>
         <td><p>Radar axes</p></td>
       </tr>
@@ -353,6 +356,37 @@
           <p><code><a href="polygon_glyph.html">x_star</a></code> <code><a href="polygon_glyph.html">y_star</a></code> <code><a href="polygon_glyph.html">x_cross</a></code> <code><a href="polygon_glyph.html">y_cross</a></code> <code><a href="polygon_glyph.html">x_hexagon</a></code> <code><a href="polygon_glyph.html">y_hexagon</a></code> <code><a href="polygon_glyph.html">x_airplane</a></code> <code><a href="polygon_glyph.html">y_airplane</a></code> <code><a href="polygon_glyph.html">x_maple</a></code> <code><a href="polygon_glyph.html">y_maple</a></code> </p>
         </td>
         <td><p>Polygon glyph coordinates</p></td>
+      </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-ggproto-objects" class="hasAnchor"><a href="#section-ggproto-objects" class="anchor"></a>Ggproto objects</h2>
+          <p class="section-desc"><p>The object oriented system that <code>ggmulti</code> uses to extend the <code>ggplot</code> package</p></p>
+        </th>
+      </tr>
+      
+      
+    </tbody><tbody>
+      
+      
+      <tr>
+        
+        <td>
+          <p><code><a href="Stat-ggproto.html">StatDensity_</a></code> <code><a href="Stat-ggproto.html">StatHist_</a></code> <code><a href="Stat-ggproto.html">StatBin_</a></code> <code><a href="Stat-ggproto.html">StatCount_</a></code> <code><a href="Stat-ggproto.html">StatSerialaxesDensity</a></code> <code><a href="Stat-ggproto.html">StatSerialaxesHist</a></code> <code><a href="Stat-ggproto.html">StatSerialaxes</a></code> <code><a href="Stat-ggproto.html">StatDotProduct</a></code> </p>
+        </td>
+        <td><p>Base Stat ggproto classes for ggplot2</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="Position-ggproto.html">PositionDodge_</a></code> <code><a href="Position-ggproto.html">PositionDodge2_</a></code> <code><a href="Position-ggproto.html">PositionIdentity_</a></code> <code><a href="Position-ggproto.html">PositionStack_</a></code> <code><a href="Position-ggproto.html">PositionFill_</a></code> </p>
+        </td>
+        <td><p>Base Position ggproto classes for ggplot2</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="Geom-ggproto.html">GeomDensity_</a></code> <code><a href="Geom-ggproto.html">GeomBar_</a></code> <code><a href="Geom-ggproto.html">GeomQuantiles</a></code> <code><a href="Geom-ggproto.html">GeomSerialaxesDensity</a></code> <code><a href="Geom-ggproto.html">GeomSerialaxesHist</a></code> <code><a href="Geom-ggproto.html">GeomSerialaxesQuantile</a></code> <code><a href="Geom-ggproto.html">GeomSerialaxes</a></code> </p>
+        </td>
+        <td><p>Base Geom ggproto classes for ggplot2</p></td>
       </tr>
     </tbody>
     </table>
